@@ -48,7 +48,7 @@
 }
 @media(max-width:767px){
   .card .details{
-    font-size: 0.7rem;
+    font-size: 2vh;
   }
 }
 .card .details p {
