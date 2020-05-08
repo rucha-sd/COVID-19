@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COVID-19</title>
+        <link rel="shortcut icon" href="img/covid.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="img/covid.png" style="height:40px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About the pandemic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="safety&symptoms.html">Symtoms and Safety Measures</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cases
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="india.html">India</a>
+                <a class="dropdown-item" href="world.html">World</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="india_fights_corona.html">India Fights Corona</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hepldesk.html">Helpdesk</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+          <div class="container text-center">
+            <div class="content">
+              <div><img class="img-fluid" src="img/mygov.jpg" data-aos="fade-down" data-aos-duration=1000></div>
+              <p class="text-center" data-aos="fade-up" data-aos-duration=1000>Government of India is taking all necessary steps to ensure that we are prepared well to face the challenge and 
+                  threat posed by the growing pandemic of COVID-19 the Corona Virus. With active support of the people of India, 
+                  we have been able to contain the spread of the Virus in our country.</p>
+            </div>
+            <div class="measures-outer" data-aos="flip-up" data-aos-duration=1500>
+              <h5>Here are some steps taken by the government against Corona Virus</h5>
+            <a class="text-center" onclick="show()" style="cursor: pointer; color: rgb(2, 76, 78); margin-bottom: 2rem;">Click here to read</a>
+            <div id="measures">
+              <h4 style="margin-bottom: 2rem;">A look at government’s measures against Covid-19 amid lockdown</h4>
+              <ol class="text-left">
+                <li>The government introduced the Aarogya Setu mobile application to educate citizens about novel 
+                  coronavirus and help them make informed decisions amid the crisis.</li>
+                  <li>Union Human Resource Development launched a web portal to monitor and record the initiative by the ministry to combat Covid-19 with Knowledge,
+                     Technology and Innovation (YUKTI).</li>
+                  <li>Under its Ujjawala scheme, the government is providing free LPG refills for the next three months to over 8.3 crore poor women.</li>
+                  <li>The government decided to double the collateral-free loan amount for women in self-help groups to Rs 20 lakh.</li>
+                  <li>Under the National Social Assistance Programme, Rs 1,400 crore has been disbursed to about 2.82 crore old age people, 
+                    widows and disabled people.</li>
+                    <li>The last date for filing income tax returns for the financial year 2018-19 has been extended to June 30, 2020.
+                       The interest rate on delayed income tax payment has been decreased to 9% from 12%.</li>
+                  <li>Wages under MGNREGA to be hiked to Rs 202 from Rs 182. The move would bring in Rs 2,000 in addition to workers.</li>
+                  <li> Finance Minister Nirmala Sitharaman announced a relief package worth Rs 1.70 lakh crore in the wake of the Covid-19 outbreak.</li>
+                  <li>The deadline for filing GST returns for March, April, May has been extended to June 30, 2020. 
+                    There will be no interest or penalty on late fee for delayed returns for companies with turnover up to Rs 5 crore.</li>
+                    <li>Deadline for linking Aadhaar with PAN card has also been extended from March 31 to June 30, 2020.</li>
+                    <li>The government has also released around Rs 30,000 crore in assistance to various sections of the society.</li>
+                    <li>The government is also providing medical insurance cover of Rs 50 lakh per person to health workers fighting 
+                      the coronavirus pandemic.</li>
+              </ol>
+            </div>
+            </div>
+          </div>
+
+              <div class="container">
+                <div class="corona-fighters text-center">
+                  <p style="font-size:1rem">For the past two months, lakhs of our people have been selflessly serving others day and night, without caring about 
+                    themselves.Doctors, nurses, paramedics, police, sanitation workers in the country are risking their lives to 
+                    ensure that the disease doesn't spread from patients to family members and others.</p>
+                  <div class="card-deck">
+                      <div class="card" data-aos="fade-up" data-aos-duration=1000>
+                        <div class="card-img-top"><img src="img/police.jpeg"></div>
+                        <div class="card-body">
+                          <p class="text-center">The police personnel are on the frontline of the fight against COVID-19 to maintain social distancing
+                            and spread awareness among common people</p>
+                        </div>
+                    </div>
+                      <div class="card" data-aos="fade-up" data-aos-duration=1000>
+                        <div class="card-img-top"><img src="img/doctor.jpg"></div>
+                        <div class="card-body">
+                          <p class="text-center">Doctor are working day and night to save the country from the virus</p>
+                        </div>
+                      </div>
+                      <div class="card" data-aos="fade-up" data-aos-duration=1000>
+                        <div class="card-img-top"><img src="img/food-poor.webp"></div>
+                        <div class="card-body">
+                          <p class="text-center">Social workers are helping the poor and needy by serving then free meals</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="card-deck">
+                    <div class="card" data-aos="fade-up" data-aos-duration=1000>
+                      <div class="card-img-top"><img src="img/nurses.jpg"></div>
+                      <div class="card-body">
+                        <p class="text-center">Nurses are serving the patients selflessly and are always ready to assist the doctors</p>
+                      </div>
+                  </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration=1000>
+                      <div class="card-img-top"><img src="img/clean.jpg"></div>
+                      <div class="card-body">
+                        <p class="text-center">Sanitation workers are cleaning and disinfecting public places to restrict the spread of 
+                          the virus
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-duration=1000>
+                      <div class="card-img-top"><img src="img/emergency.cms"></div>
+                      <div class="card-body">
+                        <p class="text-center">Emergency service providers are working hard to provide services day and night</p>
+                      </div>
+                    </div>
+                </div>
+                  <div class="container text-center" data-aos="zoom-in" data-aos-duration=2000>
+                    <h4 class="text-center" style="margin-top: 3rem;">To all the corona warriors on the front line of the Coronavirus Pandemic<br></h4>
+                    <h2>THANK YOU!</h2>
+                    <h5>You are the real heroes of the nation!</h5>
+                    <img class="img-fluid border-bottom" src="img/fighters.jpg" style="margin: 2rem 0; border-radius: 1vh;">
+                  </div>
+                </div>
+              </div>
+              <div class="steps">
+                <div class="container">
+                <h2 class="text-center">Highlights of Corona fight in India</h2>
+                  <div class="row">
+                    <div class="col-6">
+                        <div class="hovereffect">
+                            <img src="img/India-gate-lockdown.jpg" alt="">
+                            <div class="overlay">
+                               <h2>Nation-wide Lockdown</h2>
+                               <a class="info">The Government of India under Prime Minister Narendra Modi ordered
+                                    a nationwide lockdown, limiting movement of the entire 1.3 billion population of India 
+                                    as a preventive measure against the 2020 coronavirus pandemic in India.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="hovereffect">
+                            <img src="img/janata curfew.webp" alt="">
+                            <div class="overlay">
+                               <h2>Janata Curfew</h2>
+                               <a class="info">Prime Minister Narendra Modi has said that the ‘Janta Curfew’ is the beginning of 
+                                   a long battle against coronavirus outbreak and the countrymen have proved that together they can defeat
+                                    any challenge.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="hovereffect">
+                            <img src="img/clapping-janta-curfew.jpg" alt="">
+                            <div class="overlay">
+                               <h2>Expressing gratitude</h2>
+                               <a class="info">The country to expressed its gratitude to those doctors, nurses, paramedics,
+                                   municipal staff and airport workers by going out on their balconies or standing at their doors
+                                   and windows at 5 pm on March 22 and clapping, banging on their plates or ringing bells.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="hovereffect">
+                            <img src="img/corona-lights.jpg" alt="">
+                            <div class="overlay">
+                               <h2>Blackout call</h2>
+                               <a class="info">Millions of people lit candles, lamps and flashed torches to 
+                                   ward off 'darkness of Coronavirus', as requested by Prime Minister Narendra Modi.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+                <div class="public-contribution">
+                  <div class="container">
+                    <h2 class="text-center">Let us join hands to fight against COVID-19 spread in India</h2>
+                    <div class="row">
+                      <div class="col-4 text-center">
+                        <a target="_blank" href="https://self4society.mygov.in/"><img class="img-fluid" src="img/volunteer-against-covid-19.jpg"></a>
+                      </div>
+                      <div class="col-4 text-center">
+                        <a target="_blank" href="https://www.pmcares.gov.in/en/?cbps=1"><img class="img-fluid" src="img/PM_CARES_Fund_.jpg"></a>
+                      </div>
+                      <div class="col-4 text-center">
+                        <a target="_blank" href="https://www.mygov.in/task/mygov-covid-19-shri-shakti-challenge/"><img class="img-fluid" src="img/mygov_strishakti.jpg"></a>
+                      </div>
+                      <div class="col-4 text-center">
+                        <a target="_blank" href="https://www.mygov.in/group-issue/share-your-ideas-suggestions-help-fight-coronavirus/"><img class="img-fluid" src="img/coronavirus.jpg"></a>
+                      </div>
+                      <div class="col-4 text-center">
+                        <a target="_blank" href="https://quiz.mygov.in/quiz/quiz-on-covid-19/"><img class="img-fluid" src="img/covid-quiz.jpg"></a>
+                      </div>
+                      <div class="col-4 text-center">
+                        <a target="_blank" href="https://www.mygov.in/task/innovation-challenge-development-video-conferencing-solution/"><img class="img-fluid" src="img/innovationchallenge.jpg"></a>
+                      </div>
+                    </div>
+                </div>
+          </div>
+          <div class="container">
+            <div class="stayconnected">
+              <h2 class="text-center">Stay connected and updated..</h2>
+              <h5 class="text-center">SOCIAL HUB</h5>
+              <div class="row">
+                <div class="col text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=919013353535&text=Hi&source=&data=&app_absent=">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/whatsapp.png"/></a>
+                    <p>WhatsApp</p>
+                </div>
+                <div class="col text-center">
+                  <a target="_blank" href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2FMyGovIndia">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/facebook-messenger.png"/></a>
+                    <p>Facebook Messenger</p>
+                </div>
+                <div class="col text-center">
+                  <a target="_blank" href="https://www.facebook.com/MyGovIndia/">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/facebook-new.png"/></a>
+                    <p>Facebook</p>
+                </div>
+                <div class="col text-center">
+                  <a href="#">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/telegram-app.png"/></a>
+                    <p>Telegram</p>
+                </div>
+                <div class="col text-center">
+                  <a target="_blank" href="https://www.instagram.com/mygovindia/">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/instagram-new.png"/></a>
+                    <p>Instagram</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <a target="_blank" href="https://twitter.com/mygovindia">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/twitter.png"/></a>
+                    <p>Twitter</p>
+                </div>
+                <div class="col text-center">
+                  <a target="_blank" href="https://www.linkedin.com/company/mygov-india/">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/linkedin.png"/></a>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="col text-center">
+                  <a target="_blank" href="https://www.youtube.com/mygovindia">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/youtube.png"/></a>
+                    <p>YouTube</p>
+                </div>
+                <div class="col text-center">
+                  <a target="_blank" href="https://www.tiktok.com/@mygovindia">
+                    <img class="img-fluid" src="https://img.icons8.com/color/144/000000/tiktok.png"/></a>
+                    <p>TikTok</p>
+                </div>
+                <div class="col text-center">
+                  <a target="_blank" href="http://m.helo-app.com/user/6815050150605718530/share?app_id=1342&language=hi&open_url=snssdk1342%3A%2F%2Fuser_profile%3Fapp_launch_by%3DShare%2BPage%2BLink%26user_id%3D6815050150605718530&region=in">
+                    <img class="img-fluid" src="https://img.icons8.com/doodle/96/000000/helo.png" style="width: 140px;"></a>
+                    <p>Helo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="page-footer bg-dark">
+            <div class="row">
+              <div class="col-md-9">
+                <h6>To know more visit:</h6>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a target="_blank" href="https://www.mygov.in/covid-19">www.mygov.in/covid-19</a></li>
+                      <li><a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">who/novel-coronavirus-2019</a></li>
+                      <li><a target="_blank" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">coronvavirushelplinenumber.pdf</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a target="_blank" href="https://www.mohfw.gov.in/">www.mohfw.gov.in</a></li>
+                      <li><a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen">who/novel-coronavirus-2019/events-as-they-happen</a></li>
+                      <li><a target="_blank" href="https://www.un.org/en/coronavirus">Corona Virus| United Nations</a></li>
+                    </ul>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-3">
+                <p>Resources:</p>
+                <div class="row resources">
+                  <div class="col text-center"><img class="img-fluid" src="img/mygov-logo.png"></div>
+                  <div class="col text-center"><img class="img-fluid" src="https://img.icons8.com/color/96/000000/world-health-organization.png"/></div>
+                </div>
+              </div>
+            </div>
+            
+          </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            function show() {
+              var x = document.getElementById("measures");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+      function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+            </script>
+    </body>
+</html>

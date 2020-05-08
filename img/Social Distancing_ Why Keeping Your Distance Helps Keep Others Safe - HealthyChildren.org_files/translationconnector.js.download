@@ -1,0 +1,69 @@
+﻿//ver 01142013
+
+ExecuteOrDelayUntilScriptLoaded(__AAPHealthyChildrenTranslationConnectionInit, "sp.js");
+
+function __AAPHealthyChildrenTranslationConnectionInit() {
+    Type.registerNamespace('AAP');
+    Type.registerNamespace('AAP.HealthyChildren');
+    Type.registerNamespace('AAP.HealthyChildren.UI.Code');
+    Type.registerNamespace('AAP.HealthyChildren.TranslationConnector');
+    
+
+    AAP.HealthyChildren.TranslationConnector.sendTranslationRequest = function () {
+
+        var clientContext = new SP.ClientContext.get_current();
+        var list = clientContext.get_site().get_rootWeb().get_lists().getByTitle('AAPTranslationConnector_ClientSinkList');
+
+        var itemCreateInfo = new SP.ListItemCreationInformation();
+        var item = list.addItem(itemCreateInfo);
+
+        item.set_item('Title', _spPageContextInfo.siteServerRelativeUrl + '/' +
+                _spPageContextInfo.pageListId + '/' + _spPageContextInfo.pageItemId);
+        item.set_item('PageUrl', window.location.pathname);
+        item.set_item('SiteUrl', _spPageContextInfo.webServerRelativeUrl);
+        item.set_item('ListID', _spPageContextInfo.pageListId);
+        item.set_item('ItemID', _spPageContextInfo.pageItemId);
+        item.set_item('RequestType', 'WebService');
+
+        item.update();
+
+        clientContext.executeQueryAsync(AAP.HealthyChildren.TranslationConnector.onQuerySucceeded,
+            AAP.HealthyChildren.TranslationConnector.onQueryFailed);
+    }
+
+    AAP.HealthyChildren.TranslationConnector.markForManualTranslation = function () {
+        var clientContext = new SP.ClientContext.get_current();
+        var list = clientContext.get_site().get_rootWeb().get_lists().getByTitle('AAPTranslationConnector_ClientSinkList');
+
+        var itemCreateInfo = new SP.ListItemCreationInformation();
+        var item = list.addItem(itemCreateInfo);
+
+        item.set_item('Title', _spPageContextInfo.siteServerRelativeUrl + '/' +
+                _spPageContextInfo.pageListId + '/' + _spPageContextInfo.pageItemId);
+        item.set_item('PageUrl', window.location.pathname);
+        item.set_item('SiteUrl', _spPageContextInfo.webServerRelativeUrl);
+        item.set_item('ListID', _spPageContextInfo.pageListId);
+        item.set_item('ItemID', _spPageContextInfo.pageItemId);
+        item.set_item('RequestType', 'Manual');
+
+        item.update();
+
+        clientContext.executeQueryAsync(AAP.HealthyChildren.TranslationConnector.onManualQuerySucceeded,
+            AAP.HealthyChildren.TranslationConnector.onQueryFailed);
+    }
+
+    AAP.HealthyChildren.TranslationConnector.onManualQuerySucceeded = function () {
+
+        alert('Manual translation request created successfully');
+    }
+
+    AAP.HealthyChildren.TranslationConnector.onQuerySucceeded = function () {
+
+        alert('Request scheduled successfully');
+    }
+
+    AAP.HealthyChildren.TranslationConnector.onQueryFailed = function (sender, args) {
+
+        alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+    }
+}

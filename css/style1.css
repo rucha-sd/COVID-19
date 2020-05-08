@@ -1,0 +1,176 @@
+body{
+  margin: 0;
+  padding: 0;
+  color:#000;
+  font-family: 'Work Sans';
+}
+
+.title{
+margin: 2rem 0;
+color: white;
+font-size: 10vh;
+text-shadow: 7px 0px 5px black;
+}
+
+.container p{
+text-align: center;
+}
+
+.cards {
+width: 100%;
+height: auto;
+justify-content: space-around;
+flex-wrap: wrap;
+flex-direction: row;
+}
+.box{
+height: 60vh;
+text-align: center;
+padding-top: 25vh;
+transition: all 0.5s;
+margin: 2vh 0;
+border: 2px solid black;
+}
+.box:hover{
+filter: brightness(1.2);
+}
+
+.box-sub{
+height: 90px;
+background-color: rgba(0,0,0,0.5);
+line-height: 90px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+font-weight: 500;
+color: white;
+}
+.circle{
+width: 10vh;
+height: 10vh;
+border-radius: 50%;
+text-align: center;
+color: white;
+background-color: rgb(44, 44, 82);
+box-shadow: 0px 1px 9px 7px white;
+margin-top: 5vh;
+}
+
+.bg1{
+background: url(../img/c2.jpg) no-repeat center center;
+background-size: cover;
+}
+.bg2{
+background: url(../img/question.png) no-repeat center center;
+background-size: cover;
+}
+.bg3{
+background: url(../img/call.jpg) no-repeat center center;
+background-size: cover;
+}
+
+.circle .description{
+position: absolute;
+left: 0;
+bottom: 0;
+height: 100%;
+width: 100%;
+padding: 2vh;
+background-color: rgb(44, 44, 82);
+color: white;
+font-size: 0.9rem;
+transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+overflow: hidden;
+visibility: hidden;
+}
+
+@media(max-width:767px){
+  .circle .description{
+    font-size: 0.7rem;
+  }
+}
+
+.circle:hover .description{
+width: 100%;
+height: 90%;
+left: 0;
+bottom: 0;
+line-height: 25px;
+margin: 0;
+align-content: center;
+opacity: 1;
+visibility: inherit;
+}
+
+.circle .description a{
+  color: #f8ba0d;
+}
+.circle .description h4{
+  color: wheat;
+}
+.main {
+max-width: 800px;
+margin: 0 auto;
+padding: 100px 0 0;
+margin-bottom: 40px;
+}
+
+.responsive{
+width: 100%;
+height: 402px;
+padding-bottom: 56.25;
+position: relative;
+}
+
+.responsive iframe{
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+.text{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 50vh;
+background-image: url(w6.jpg);
+margin-top: 0;
+}
+
+.text p{
+position: relative;
+-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+
+
+@keyframes animate{
+
+0%{
+  transform: translateY(0px);
+}
+20%{
+  transform: translateY(-20px);
+}
+40%,100%{
+  transform: translateY(0px);
+}
+}
+
+.text p span{
+position: relative;
+display: inline-block;
+color: #fff;
+color: #000;
+font-size: 4rem;
+text-transform: uppercase;
+color: cadetblue;
+animation: animate 1s ease-in-out infinite;
+animation-delay: calc(0.1s * var(--i));
+}
+@media(max-width:767px){
+  .text p span{
+    font-size: 1rem !important;
+  }
+}
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COVID-19</title>
+        <link rel="shortcut icon" href="img/covid.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="img/covid.png" style="height:40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About the pandemic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="safety&symptoms.html">Symtoms and Safety Measures</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cases
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="india.html">India</a>
+                    <a class="dropdown-item" href="world.html">World</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="india_fights_corona.html">India Fights Corona</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hepldesk.html">Helpdesk</a>
+              </li>
+              </ul>
+            </div>
+          </nav>
+          <div id="particles-js"></div>
+            <div class="title text-center" data-aos-duration=2000 data-aos="zoom-in">COVID-19</div>
+            <div class="container">
+            <div class="numbers border-light">
+                <h4 class="text-center">India</h4>
+              <div class="row data" style=" justify-content:space-between" data-aos-duration=2000 data-aos="flip-up">
+                <a class="col text-center border bg-warning border-warning">Active<p class="count" id="ind_active">...</p></a>
+                <a class="col text-center border bg-danger border-danger">Deaths<p class="count" id="ind_death">...</p></a>
+                <a class="col text-center border bg-success border-success">Cured<p class="count" id="ind_rec">...</p></a>
+              </div>
+              <h4 class="text-center">World</h4>
+              <div class="row data" style="justify-content:space-between" data-aos-duration=2000 data-aos="flip-down">
+                <a class="col text-center border bg-warning border-warning">Active<p class="count2" id="world_active">...</p></a>
+                <a class="col text-center border bg-danger border-danger">Deaths<p class="count2" id="world_deaths">...</p></a>
+                <a class="col text-center border bg-success border-success">Cured<p class="count2" id="world_cured">...</p></a>
+              </div>
+              </div>
+            </div>
+            </div>
+          <div class="container">
+              <h5 class="text-center" style="color: rgb(3, 53, 77); margin: 6rem 0 0 0;" data-aos-duration=2000 data-aos="zoom-in">
+                The COVID-19 pandemic is the defining global
+                 health crisis of our time and the greatest global humanitarian challenge the world has faced since World War II. 
+                 The virus has spread widely, and the number of cases is rising daily. As a responsible citizen of the country, it's our responsibility 
+                 to be aware of the ongoing crisis.</h5>
+            <div class="main">
+              <h3 class="text-center" id="title"></h3>
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="about.html"><img class="img-fluid" id="img1" src="img/Corona-Virus-Facts.jpg"></a>
+                </div>
+                <div class="col-md-4">
+                  <a href="safety&symptoms.html"><img class="img-fluid" id="img2" src="img/stop.jpg"></a>
+                  </div>
+                <div class="col-md-4">
+                  <a href="hepldesk.html"><img class="img-fluid" id="img3" src="img/HELPDESK.jpeg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="page-footer bg-dark">
+            <div class="row">
+              <div class="col-md-9">
+                <h6>To know more visit:</h6>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a href="https://www.mygov.in/covid-19">www.mygov.in/covid-19</a></li>
+                      <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">who/novel-coronavirus-2019</a></li>
+                      <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">coronvavirushelplinenumber.pdf</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a href="https://www.mohfw.gov.in/">www.mohfw.gov.in</a></li>
+                      <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen">who/novel-coronavirus-2019/events-as-they-happen</a></li>
+                      <li><a href="https://www.un.org/en/coronavirus">Corona Virus| United Nations</a></li>
+                    </ul>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-3">
+                <p>Resources:</p>
+                <div class="row resources">
+                  <div class="col text-center"><img class="img-fluid" src="img/mygov-logo.png"></div>
+                  <div class="col text-center"><img class="img-fluid" src="https://img.icons8.com/color/96/000000/world-health-organization.png"/></div>
+                </div>
+              </div>
+            </div>
+            
+          </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <script src="particles.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/api.js"></script>
+      <script>
+        AOS.init();
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+      function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+        var i = 0;
+        var txt = 'Everything you need to know about Corona...';
+        var speed = 50;
+        function typeWriter() {
+        if (i < txt.length) {
+        document.getElementById("title").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+      }
+      
+      typeWriter();
+
+        </script>
+    </body>
+</html>

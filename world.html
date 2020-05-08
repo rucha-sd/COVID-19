@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COVID-19</title>
+        <link rel="shortcut icon" href="img/covid.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="img/covid.png" style="height:40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About the pandemic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="safety&symptoms.html">Symtoms and Safety Measures</a>
+                </li>
+                <li class="nav-item dropdown  active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cases
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="india.html">India</a>
+                    <a class="dropdown-item" href="world.html">World</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="india_fights_corona.html">India Fights Corona</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hepldesk.html">Helpdesk</a>
+              </li>
+              </ul>
+            </div>
+          </nav>
+          <h2 class="text-center" style="margin: 3rem 0 2rem;">Corona Virus Outbreak in the World</h2>
+          <div class="container">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Countrywise Data</h4>
+            <table class="table table-striped" style="max-width: 100%;">
+              <thead>
+                <tr>
+                  <th>State</th>
+                  <th>Infected</th>
+                  <th>Deaths</th>
+                  <th>Cured</th>
+                </tr>
+              </thead>
+              <tbody id="info">
+                
+              </tbody>
+            </table>
+          </div>
+          <script type="text/javascript" src="js/data1.js"></script>
+          <footer class="page-footer bg-dark">
+            <div class="row">
+              <div class="col-md-9">
+                <h6>To know more visit:</h6>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a href="https://www.mygov.in/covid-19">www.mygov.in/covid-19</a></li>
+                      <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">who/novel-coronavirus-2019</a></li>
+                      <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">coronvavirushelplinenumber.pdf</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a href="https://www.mohfw.gov.in/">www.mohfw.gov.in</a></li>
+                      <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen">who/novel-coronavirus-2019/events-as-they-happen</a></li>
+                      <li><a href="https://www.un.org/en/coronavirus">Corona Virus| United Nations</a></li>
+                    </ul>
+                </div>
+              </div>
+              </div>
+              <div class="col-md-3">
+                <p>Resources:</p>
+                <div class="row resources">
+                  <div class="col text-center"><img class="img-fluid" src="img/mygov-logo.png"></div>
+                  <div class="col text-center"><img class="img-fluid" src="https://img.icons8.com/color/96/000000/world-health-organization.png"/></div>
+                </div>
+              </div>
+            </div>
+            
+          </footer>
+          <script>
+            var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+}
+          </script>
+    </body>
+    </html>

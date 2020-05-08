@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COVID-19</title>
+        <link rel="shortcut icon" href="img/covid.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style1.css">
+    </head>
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="img/covid.png" style="height:40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About the pandemic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="safety&symptoms.html">Symtoms and Safety Measures</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cases
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="india.html">India</a>
+                    <a class="dropdown-item" href="world.html">World</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="india_fights_corona.html">India Fights Corona</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="hepldesk.html">Helpdesk</a>
+              </li>
+              </ul>
+            </div>
+          </nav>
+        <h1 class="text-center" style="margin: 2rem 0;">Helpdesk</h1>
+
+        <div class="container text-center">
+            <img class="img-fluid" src="img/help.jpg" data-aos="fade-down" data-aos-duration=1000 style="border-radius: 1vh;">
+            <p><h3 class="text-center" style="margin-top: 2rem; color: indianred;" data-aos="fade-up" data-aos-duration=1000>
+              The first step to avoid corona is to stay away from rumors!!!</h3></p>
+
+        </div>
+
+        
+    </div>
+    <div class="container">
+      <div class="movementpass text-center" data-aos="zoom-in" data-aos-duration=1000>
+        <h5>Do you need a movement pass during Covid-19 Lockdown?</h5>
+        <h6><a class="text-center" onclick="show()" style="cursor: pointer; color: crimson; margin-bottom: 2rem;">
+          <u>Get weblinks to register for travelling from other states here</u>
+        </a></h6>
+        <div id="states">
+          <div class="row" style="justify-content: space-around;">
+            <div class="col bg-info"><a href="https://eservices.assam.gov.in/directApply.do?serviceId=1533" target="blank">Assam</a></div>
+            <div class="col bg-danger"><a href="https://serviceonline.bihar.gov.in/" target="blank">Bihar</a></div>
+            <div class="col bg-success"><a href="http://admser.chd.nic.in/dpc/" target="blank">Chandigarh</a></div>
+            <div class="col bg-warning"><a href="https://raipur.gov.in/cg-covid-19-epass/" target="blank">Chhattisgarh</a></div>
+          </div>
+          <div class="row" style="justify-content: space-around;">
+            <div class="col bg-warning"><a href="https://epass.jantasamvad.org/epass/relief/english/" target="blank">Delhi</a></div>
+            <div class="col bg-success"><a href="https://www.digitalgujarat.gov.in/Citizen/ServiceDescription.aspx" target="blank">Gujarat</a></div>
+            <div class="col bg-danger"><a href="https://saralharyana.gov.in/applyService.do?serviceId=15050001" target="blank">Haryana</a></div>
+            <div class="col bg-info"><a href="http://covid19epass.hp.gov.in" target="blank">Himachal Pradesh</a></div>
+          </div>
+          <div class="row" style="justify-content: space-around;">
+            <div class="col bg-danger"><a href="https://ranchi.nic.in/e-pass/" target="blank">Jharkhand</a></div>
+            <div class="col bg-warning"><a href="https://sevasindhu.karnataka.gov.in/Sevasindhu/English" target="blank">Karnataka</a></div>
+            <div class="col bg-info"><a href="https://covid19jagratha.kerala.nic.in/home/addDomestic" target="blank">Kerala</a></div>
+            <div class="col bg-success"><a href="https://leh.nic.in/epass/" target="blank">Leh Ladakh</a></div>
+          </div>
+          <div class="row" style="justify-content: space-around;">
+            <div class="col bg-success"><a href="https://mapit.gov.in/covid-19/" target="blank">Madhya Pradesh</a></div>
+            <div class="col bg-info"><a href="https://covid19.mhpolice.in/" target="blank">Maharashtra</a></div>
+            <div class="col bg-warning"><a href="http://covid19regd.odisha.gov.in" target="blank">Odisha</a></div>
+            <div class="col bg-danger"><a href="http://covidhelp.punjab.gov.in" target="blank">Punjab</a></div>
+          </div>
+          <div class="row" style="justify-content: space-around;">
+            <div class="col bg-warning"><a href="http://emitraapp.rajasthan.gov.in" target="blank">Rajasthan</a></div>
+            <div class="col bg-danger"><a href="http://registration.covid19sikkim.org/" target="blank">Sikkim</a></div>
+            <div class="col bg-success"><a href="http://rtos.nonresidenttamil.org" target="blank">Tamil Nadu</a></div>
+            <div class="col bg-info"><a href="https://epass-svc.app.koopid.ai/epassportal/widgets/dashboard.html" target="blank">Telangana</a></div>
+          </div>
+          <div class="row" style="justify-content: space-around;">
+            <div class="col bg-info"><a href="http://jansunwai.up.nic.in/" target="blank">Uttar Pradesh</a></div>
+            <div class="col bg-warning"><a href="http://smartcitydehradun.uk.gov.in/e-pass" target="blank">Uttarakhand</a></div>
+            <div class="col bg-danger"><a href="https://coronapass.kolkatapolice.org/" target="blank">West Bengal</a></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+        <h2 class="text-center" style="margin-top: 3rem; padding: 1vh;">We are here to help...</h2>
+        <div class="wallpaper">
+        <div class="container">
+          <div class="cards">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box bg1">
+                  <div class="box-sub">Trace the Virus</div>
+                  <div class="circle c1 mx-auto">
+                      <div class="description">
+                          
+                            <h4 class="text-center">Aarogya Setu App</h4 >
+                            <p>   This app is designed to help control the spread of coronavirus and make its information accessible to the common people. 
+                              This special app also helps in finding out corona positive people present nearby.
+                          </p>
+                          <a href="https://www.mygov.in/aarogya-setu-app/" style="padding-left: 10px;">Download now...click here</a>
+                      </div>
+                  </div> 
+                  
+              </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box bg2">
+                    
+                  <div class="box-sub">Ask questions</div>
+                  <div class="circle c2 mx-auto">
+                      <div class="description">
+                        <h4 class="text-center">WhatsApp Bot</h4 >
+                          <p>
+                              The citizens of the country can text a WhatsApp bot — called MyGov Corona Helpdesk — to get instant authoritative answers to their coronavirus queries such as the symptoms of the viral disease and how they could seek help.
+                          </p>
+                          <p>
+                              <i>
+                              <a href=" https://wa.me/919013151515?text=Hi">Click here </a> or send Hi on <b>+919013151515</b>.
+                              #IndiaFightsCorona
+                              </i>
+                              
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4"><div class="box bg3">
+                    
+                    <div class="box-sub">Helpline Number</div>
+                    <div class="circle c3 mx-auto">
+                        <div class="description">
+                          <h4 class="text-center">Helpline Number</h4 >
+                            <p>
+                                To make the people of India feel safe and secured or for any emergency situation,
+                                during this pandemic, the government has made a 24/7 service available for the citizens of India.
+                                Contact the given helpline number for your state/city/district.
+                            </p>
+                            
+                            <p>
+    
+                                For your state get the helpline number here &#128071;
+                            </p>
+                            <a target="blank" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" style="padding-left: 10px;">Download now...click here</a>
+                                
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+                
+                
+                
+            </div>
+            <div class="text">
+                
+                <p><span style="--i:1;">S</span>
+                    <span style="--i:2;">T</span>
+                    <span style="--i:3;">A</span>
+                    <span style="--i:4;">Y-</span>
+                    <span style="--i:5;">H</span>
+                    <span style="--i:6;">O</span>
+                    <span style="--i:7;">M</span>
+                    <span style="--i:8;">E,</span>
+                    <span style="--i:9;">S</span>
+                    <span style="--i:10;">T</span>
+                    <span style="--i:12;">A</span>
+                    <span style="--i:13;">Y-</span>
+                    <span style="--i:14;">S</span>
+                    <span style="--i:15;">A</span>
+                    <span style="--i:16;">F</span>
+                    <span style="--i:17;">E</span>
+                </p>
+            </div>
+            
+        </div>
+        </div>
+        <footer class="page-footer bg-dark">
+          <div class="row">
+            <div class="col-md-9">
+              <h6>To know more visit:</h6>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li><a href="https://www.mygov.in/covid-19">www.mygov.in/covid-19</a></li>
+                    <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">who/novel-coronavirus-2019</a></li>
+                    <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">coronvavirushelplinenumber.pdf</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li><a href="https://www.mohfw.gov.in/">www.mohfw.gov.in</a></li>
+                    <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen">who/novel-coronavirus-2019/events-as-they-happen</a></li>
+                    <li><a href="https://www.un.org/en/coronavirus">Corona Virus| United Nations</a></li>
+                  </ul>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+              <p>Resources:</p>
+              <div class="row resources">
+                <div class="col text-center"><img class="img-fluid" src="img/mygov-logo.png"></div>
+                <div class="col text-center"><img class="img-fluid" src="https://img.icons8.com/color/96/000000/world-health-organization.png"/></div>
+              </div>
+            </div>
+          </div>
+          
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+          function show() {
+            var x = document.getElementById("states");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+      function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+          </script>
+  </body>
+</html>
