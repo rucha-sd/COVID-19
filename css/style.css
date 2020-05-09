@@ -10,12 +10,10 @@ body{
     background-color: rgb(249, 244, 249);
     background:linear-gradient(to bottom, rgba(255, 255, 255, 0.911),rgba(255, 255, 255, 0.904)),url('../img/seamless-coronavirus-pattern-sign.jpg');
     background-attachment: fixed;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.459)),url('img/bg.jpg'); */
     background-position: center;
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
     color: black;
     font-family: 'Work Sans';
+    overflow-x: hidden;
 }
 .header{
       background:linear-gradient(to bottom, rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.459)),url('../img/corona.jpg');
