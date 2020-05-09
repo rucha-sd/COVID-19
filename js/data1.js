@@ -18,6 +18,20 @@ const func = function(){
             if(cured == null)
             cured = "-"
             
+            var flag = 0;
+            if(infected == '-' || infected == 'NA')
+            flag+=1;
+            if(deceased == '-' || deceased == 'NA')
+            flag+=1;
+            if(cured == '-' || cured == 'NA')
+            flag+=1;
+
+            if(flag == 3)
+            continue;
+
+            if(infected==0 && deceased>0)
+            continue;
+
             data += "<tr><td>" + resp[i].country + "</td><td>"+ infected +"</td><td>"+ deceased +"</td><td>"+ cured +"</td></tr>";            
         }
 
