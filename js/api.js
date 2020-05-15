@@ -1,5 +1,5 @@
 const url = 'https://api.covid19india.org/data.json'
-const url2 = 'https://api.thevirustracker.com/free-api?global=stats'
+const url2 = 'https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true'
 const ia = document.getElementById('ind_active')
 const ir = document.getElementById('ind_rec')
 const id = document.getElementById('ind_death')
@@ -35,9 +35,29 @@ window.onload = function(){
     var death = document.getElementById('world_deaths')
     var wactive = document.getElementById('world_active')
 
-    wcured.innerHTML = resp2.results[0].total_recovered;
-    wactive.innerHTML = resp2.results[0].total_active_cases;
-    death.innerHTML = resp2.results[0].total_deaths;
+    var total_deaths = 0
+    var total_active_cases = 0
+    var total_recovered = 0
+
+    for(i in resp2)
+    {
+        if(resp2[i].infected!="NA" && resp2[i].infected!=null)
+        total_active_cases += resp2[i].infected
+    }
+    for(i in resp2)
+    {
+        if(resp2[i].deceased!="NA" && resp2[i].deceased!=null)
+        total_deaths += resp2[i].deceased
+    }
+    for(i in resp2)
+    {
+        if(resp2[i].recovered!="NA" && resp2[i].recovered!=null)
+        total_recovered += resp2[i].recovered
+    }
+
+    wcured.innerHTML = total_recovered;
+    wactive.innerHTML = total_active_cases;
+    death.innerHTML = total_deaths;
 
     console.log('Done')}).then(function() {
         $('.count2').each(function () {
